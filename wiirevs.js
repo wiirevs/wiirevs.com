@@ -61,6 +61,9 @@ function sortGames(announce = true) {
   document.querySelectorAll('.game-grid').forEach(grid => {
     const cards = [...grid.querySelectorAll(':scope > .game-card')];
     cards.sort((a, b) => {
+      // Coming-soon teasers stay at the end in release order, whatever the sort
+      if ('soon' in a.dataset || 'soon' in b.dataset)
+        return 'soon' in a.dataset && 'soon' in b.dataset ? Number(a.dataset.soon) - Number(b.dataset.soon) : 'soon' in a.dataset ? 1 : -1;
       // Release order: undated placeholders stay at the end in either direction
       if (key === 'release' && !a.dataset.release !== !b.dataset.release) return a.dataset.release ? -1 : 1;
       const compared = key === 'year' ? Number(a.dataset.year) - Number(b.dataset.year)
@@ -108,14 +111,15 @@ function applyVisibility() {
   document.querySelectorAll('.game-card').forEach(card => {
     card.hidden = ('tbc' in card.dataset && !showTbc.checked)
       || Boolean(card.dataset.release && card.dataset.release > asOf.value)
-      || Boolean(filterDeveloper.value && card.dataset.developer !== filterDeveloper.value);
+      || Boolean(filterDeveloper.value && card.dataset.developer !== filterDeveloper.value)
+      || Boolean(card.dataset.soonUntil && card.dataset.soonUntil <= asOf.value);
     // A game released on the chosen "as of" day (today by default) is new
     card.toggleAttribute('data-new', card.dataset.release === asOf.value);
   });
   [['main-game-grid', 'main-count'], ['bonus-game-grid', 'bonus-count']].forEach(([grid, count]) => {
-    const total = document.querySelectorAll(`#${grid} > .game-card:not([hidden])`).length;
+    const total = document.querySelectorAll(`#${grid} > .game-card:not([hidden]):not([data-soon])`).length;
     document.getElementById(count).textContent = `${total} games`;
-    if (grid === 'bonus-game-grid') document.getElementById('bonus-games').hidden = total === 0;
+    if (grid === 'bonus-game-grid') document.getElementById('bonus-games').hidden = !document.querySelector(`#${grid} > .game-card:not([hidden])`);
   });
 }
 showTbc.addEventListener('change', () => { savePref('showTbc', showTbc.checked); applyVisibility(); });
