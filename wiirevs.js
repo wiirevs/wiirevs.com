@@ -116,6 +116,10 @@ function applyVisibility() {
     // A game released on the chosen "as of" day (today by default) is new
     card.toggleAttribute('data-new', card.dataset.release === asOf.value);
   });
+  // The dock's "N of M games released", as of the chosen date
+  const released = document.getElementById('released-count');
+  if (released) released.textContent = `${[...document.querySelectorAll('.game-card:not([data-tbc]):not([data-soon])')]
+    .filter(card => !(card.dataset.release && card.dataset.release > asOf.value)).length} of ${released.dataset.total} games released`;
   [['main-game-grid', 'main-count'], ['bonus-game-grid', 'bonus-count']].forEach(([grid, count]) => {
     const total = document.querySelectorAll(`#${grid} > .game-card:not([hidden]):not([data-soon])`).length;
     document.getElementById(count).textContent = `${total} games`;
