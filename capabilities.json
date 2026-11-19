@@ -1,0 +1,26 @@
+{
+  "widescreen": {
+    "label": "Widescreen",
+    "icon": "icons/widescreen.png"
+  },
+  "rumble": {
+    "label": "Rumble",
+    "icon": "icons/rumble.png"
+  },
+  "fps": {
+    "label": "Full FPS",
+    "icon": "icons/fps.png"
+  },
+  "motion": {
+    "label": "Motion controls",
+    "icon": "icons/motion.png"
+  },
+  "gamecube": {
+    "label": "GameCube controller",
+    "icon": "icons/gamecube.png"
+  },
+  "classic": {
+    "label": "Classic Controller",
+    "icon": "icons/classic.png"
+  }
+}

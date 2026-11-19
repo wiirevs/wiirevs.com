@@ -1,0 +1,113 @@
+:root{color-scheme:light;--ink:#505458;--muted:#747a80;--cyan:#1ea0de;--focus:#0084d4;--panel:#f6f7f9;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#f6f7f9;font-synthesis:none;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:radial-gradient(ellipse at 50% 0,#fff 0,transparent 65%),repeating-linear-gradient(0deg,rgba(0,0,0,.013) 0 1px,transparent 1px 4px);line-height:1.6}a{color:var(--focus);text-underline-offset:4px}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}.site-shell{width:min(1100px,100% - 64px);margin:auto}.site-header{display:flex;align-items:center;justify-content:space-between;padding:34px 0 0}.wordmark{color:#787e84;font-size:40px;line-height:1;letter-spacing:-2px;font-weight:800;text-decoration:none}.wordmark span,.about-mark span{color:var(--cyan)}.header-link{font-size:14px;text-decoration:none;color:var(--muted);padding:10px 0}.header-link span{margin-left:8px;color:var(--cyan)}.intro{text-align:center;padding:70px 0 64px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2.4px;display:flex;justify-content:center;align-items:center;gap:9px;margin:0 0 20px}.status-light{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px #e4f2fa}h1{font-size:clamp(36px,5vw,58px);line-height:1.14;letter-spacing:-2px;font-weight:700;text-wrap:balance;margin:0 0 22px;color:#404448}h1 span{color:var(--cyan)}.intro-copy{max-width:470px;margin:auto;color:var(--muted);font-size:16px;text-wrap:pretty}.intro-copy p{margin:0}.section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 20px}h2{font-size:21px;line-height:1.3;letter-spacing:-.5px;margin:0;color:#404448}h2 span{font-size:11px;letter-spacing:0;font-weight:500;color:var(--muted);background:#e8ecef;border-radius:20px;padding:5px 9px;margin-left:8px;white-space:nowrap}.section-heading p{font-size:12px;color:var(--muted);margin:0}.game-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}.game-card{min-width:0}.game-screen{appearance:none;-webkit-appearance:none;display:block;position:relative;width:100%;aspect-ratio:4/3;padding:8px;border:0;border-radius:24px;background:linear-gradient(#fff,#dee2e7);box-shadow:0 2px 3px #00000014,0 8px 18px #0000000a,inset 0 0 0 1px #0000000a;cursor:pointer;transition:box-shadow .2s,transform .2s}.game-screen:hover,.game-screen:focus-visible{box-shadow:0 0 0 3px #30baec,0 3px 8px #1ea0de29,0 12px 26px #00000012;outline:none;transform:translateY(-3px)}.screen-inner{display:block;position:relative;width:100%;height:100%;border-radius:16px;overflow:hidden;background:#111;isolation:isolate}.screen-inner img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;background:#111}.title-art{transition:opacity .24s;z-index:1}.gameplay-art{z-index:0}.title-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(ellipse at top,#e4f2fa,#f6f7f9 75%);position:absolute;inset:0;color:#404448;line-height:1.1;gap:12px}.title-placeholder strong{font-size:clamp(24px,3vw,38px);letter-spacing:-1px}.title-placeholder small{font-size:14px;letter-spacing:1px}.game-screen:hover .title-art,.game-screen:focus-visible .title-art,.game-screen[data-preview="true"] .title-art{opacity:0}.game-screen[data-preview="false"] .title-art{opacity:1}.preview-label{position:absolute;bottom:8px;right:8px;padding:4px 8px;color:#fff;background:#000b;border-radius:8px;z-index:2;font:600 10px/1.5 system-ui,sans-serif;letter-spacing:.3px;opacity:0;transition:opacity .2s;pointer-events:none}.game-screen:hover .preview-label,.game-screen:focus-visible .preview-label,.game-screen[data-preview="true"] .preview-label{opacity:1}.game-screen[data-preview="false"] .preview-label{opacity:0}.game-screen:active{transform:scale(.96)}.game-caption{padding:13px 8px 0}.game-caption h3{font-size:16px;letter-spacing:-.25px;line-height:1.35;margin:0;font-weight:650;color:#404448}.game-subtitle{font-size:13px;color:var(--muted);margin:3px 0 0}.game-maker{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:var(--muted);margin:6px 0 0}.bonus-section{margin-top:55px;padding-top:28px;border-top:1px solid #ced3d8}.about-panel{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:center;margin:64px 0 0;padding:32px 36px;background:linear-gradient(#fff,#edf0f3);box-shadow:0 2px 4px #0000000a,0 10px 30px #00000005;border-radius:28px}.about-mark{font-size:42px;letter-spacing:-2px;font-weight:800;color:#787e84}.about-panel h2{font-size:20px}.about-panel p{font-size:14px;color:var(--muted);margin:10px 0 0;text-wrap:pretty}footer{padding:38px 0;text-align:center;font-size:12px;color:var(--muted)}footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center}footer a{color:var(--muted);text-decoration:none}footer a:hover,.header-link:hover{color:var(--focus)}a:focus-visible{outline:3px solid var(--cyan);outline-offset:5px;border-radius:4px}.skip-link{position:fixed;top:10px;left:10px;padding:10px 20px;background:white;z-index:5;transform:translateY(-150%)}.skip-link:focus{transform:none}
+@media(max-width:800px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intro{padding:55px 0}.about-panel{grid-template-columns:1fr;gap:16px}.about-mark{font-size:32px}.section-heading{align-items:flex-start}.preview-hint{max-width:130px;text-align:right}}
+@media(max-width:480px){.site-shell{width:calc(100% - 32px)}.site-header{padding-top:24px}.wordmark{font-size:32px}.header-link{font-size:12px}.intro{padding:44px 0}.intro-copy{font-size:14px;max-width:320px}h1{letter-spacing:-1.3px}.eyebrow{font-size:9px;letter-spacing:1.8px}.section-heading{display:block}.section-heading p{margin-top:8px;max-width:none;text-align:left}.game-grid{gap:24px 12px}.game-screen{border-radius:18px;padding:6px}.screen-inner{border-radius:12px}.game-caption{padding:10px 3px 0}.game-caption h3{font-size:14px}.game-subtitle{font-size:12px}.game-maker{font-size:9px}.title-placeholder{padding:10px}.title-placeholder strong{font-size:22px}.title-placeholder small{font-size:11px}.about-panel{padding:24px;margin-top:40px}.bonus-section{margin-top:36px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}.game-screen:hover,.game-screen:focus-visible,.game-screen:active{transform:none}}
+.header-nav{display:flex;gap:24px;align-items:center}.header-nav .back{font-size:12px;color:var(--muted);text-decoration:none;padding:10px 0}.header-nav .back:hover{color:var(--focus)}@media(max-width:480px){.header-nav{gap:12px}.header-nav .back{font-size:10px}.header-link{font-size:10px}}
+/* Channel proportions and lower menu panel, following the Wii Menu reference. */
+.intro{padding:40px 0 38px}.intro h1{font-size:clamp(28px,4vw,40px);letter-spacing:-1.4px;margin-bottom:14px}.eyebrow{margin-bottom:14px}.intro-copy{max-width:560px;font-size:14px}.game-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 18px}.game-screen{aspect-ratio:16/10;border-radius:20px;padding:6px}.screen-inner{border-radius:14px}.title-placeholder strong{font-size:28px}.title-placeholder small{font-size:12px}.game-caption{padding:11px 5px 0}.game-caption h3{font-size:14px}.game-subtitle{font-size:12px}.game-maker{font-size:9px}.bonus-section{margin-top:36px}.about-panel{margin-top:40px}.menu-dock{position:relative;background:linear-gradient(#e3e6e9,#f0f2f4);margin:80px calc((min(1100px,100vw - 64px) - 100vw)/2) 0;padding:0 max(32px,calc((100vw - 1100px)/2))}.dock-curve{position:absolute;width:100%;height:60px;left:0;top:-59px;pointer-events:none}.dock-controls{display:flex;justify-content:space-between;align-items:center;gap:20px;position:relative;padding:2px 0 8px}.dock-button{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;font-size:20px;color:#838b91;text-decoration:none;background:linear-gradient(#fff,#dde2e6);box-shadow:0 0 0 2px #79c9e6,inset 0 2px 4px #fff,0 3px 8px #0002;transition:box-shadow .2s,transform .2s}.dock-button:hover{color:var(--focus);box-shadow:0 0 0 3px #30baec,0 4px 12px #0002}.dock-button:active{transform:scale(.96)}.dock-info{font-style:italic}.dock-controls p{text-align:center;font-size:20px;font-weight:500;line-height:1.4;color:#787e84;margin:0;font-variant-numeric:tabular-nums}.dock-controls p span{display:block;font-size:11px;font-weight:400}.menu-dock footer{padding:18px 0 26px}
+@media(max-width:900px){.game-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.section-heading p{font-size:11px}.title-placeholder strong{font-size:25px}}
+@media(max-width:650px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.section-heading{display:block}.section-heading p{max-width:none;text-align:left;margin-top:8px}.intro{padding:36px 0}.game-screen{border-radius:18px}.screen-inner{border-radius:12px}.menu-dock{margin-top:72px}.dock-button{width:46px;height:46px;font-size:17px}.dock-controls p{font-size:18px}}
+@media(max-width:480px){.menu-dock{margin-left:-16px;margin-right:-16px;padding:0 20px}.title-placeholder strong{font-size:22px}.title-placeholder small{font-size:10px}.game-screen{aspect-ratio:4/3}.intro-copy{font-size:13px}.intro h1{font-size:30px}.about-panel p{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.dock-button:active{transform:none}}
+/* Arcade title screens use a consistent 640 × 480 canvas. */
+.game-screen{aspect-ratio:4/3}.game-title-nowrap{white-space:nowrap}@media(max-width:480px){.game-caption h3.game-title-nowrap{font-size:clamp(10px,2.8vw,14px)}}
+
+.wordmark span,.about-mark span{display:inline-block;font-style:italic}
+
+/* The artwork itself is 4:3; the surrounding frame adds its own padding. */
+.game-screen{aspect-ratio:auto}.screen-inner{height:auto;aspect-ratio:4/3}
+/* Clip the composited image stack once, avoiding dark antialiasing seams. */
+.screen-inner{--screen-radius:14px;border-radius:var(--screen-radius);background:transparent;clip-path:inset(0 round var(--screen-radius))}.screen-inner img{background:transparent}
+@media(max-width:650px){.screen-inner{--screen-radius:12px}}
+/* Keep the hidden gameplay layer out of the title screen's antialiased edge. */
+.gameplay-art{visibility:hidden}.game-screen:hover .gameplay-art,.game-screen:focus-visible .gameplay-art,.game-screen[data-preview="true"] .gameplay-art{visibility:visible}.game-screen[data-preview="false"] .gameplay-art{visibility:hidden}
+
+.game-capabilities{display:flex;align-items:center;gap:9px;margin:9px 0 0;min-height:22px}.capability{display:inline-flex;align-items:center;gap:8px}.capability img{display:block;width:21px;height:21px;object-fit:contain}.capability-legend{display:flex;flex-wrap:wrap;gap:14px 22px;margin:22px 0 0;padding:20px 0 0;border-top:1px solid #ced3d8;font-size:12px;color:var(--muted)}.about-content{min-width:0}.sort-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:12px;color:var(--muted)}.sort-controls label{display:flex;align-items:center;gap:7px}.sort-controls select{font:inherit;color:var(--ink);min-height:40px;border:1px solid #d8dee3;background:#fff;border-radius:12px;padding:0 28px 0 10px}.sort-controls select:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}.preview-hint{margin:8px 0 20px!important;font-size:12px;color:var(--muted);text-align:right}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}@media(max-width:650px){.sort-controls{margin-top:12px}.preview-hint{text-align:left}.game-capabilities{gap:6px}.capability img{width:19px;height:19px}.game-title-nowrap{font-size:clamp(9px,2.6vw,14px)!important}}
+.collection-options{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin:-8px 0 20px}.collection-options .preview-hint{margin:0!important;text-align:left}.bonus-layout-option{display:flex;align-items:center;gap:8px;min-height:40px;color:var(--muted);font-size:12px;cursor:pointer}.bonus-layout-option input{width:16px;height:16px;accent-color:var(--focus);margin:0}.bonus-layout-option input:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}.bonus-section--inline{grid-column:1/-1;background:#e9ecef;border:0;border-radius:24px;padding:24px;margin:0}.bonus-section--inline .section-heading{margin-bottom:20px}.bonus-section--inline .game-grid{margin:0}@media(max-width:480px){.bonus-section--inline{padding:16px;border-radius:22px}.collection-options{gap:2px}}
+/* Bonus games share a full row at the end of the main grid. */
+.bonus-section--inline{grid-column:1/-1;position:relative;isolation:isolate;padding:0;margin:0;background:transparent;border-radius:0}.bonus-section--inline::before{content:"";position:absolute;inset:-8px;background:#e9ecef;border-radius:24px;z-index:-1;pointer-events:none}.bonus-section--inline .section-heading{margin:8px 0 20px}.bonus-section--inline .section-heading span{background:#fff}.bonus-section--inline .game-grid,#bonus-game-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 18px}@media(max-width:650px){.bonus-section--inline .game-grid,#bonus-game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}}
+
+@media(max-width:480px){}
+
+
+
+@font-face{font-family:"WiiRevs Logo";src:url("fonts/wiirevs-logo-750.woff2") format("woff2");font-weight:750;font-style:normal;font-display:swap}.wordmark,.about-mark{font-family:"WiiRevs Logo",ui-rounded,sans-serif;font-weight:750}.wordmark span,.about-mark span{font-synthesis:style;font-style:italic}.section-heading h2{display:flex;align-items:center;gap:12px}.section-heading h2>span{margin-left:0;transform:translateY(2px)}
+
+.display-options{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}.game-capabilities{flex-wrap:wrap}
+
+/* Wii manual compatibility badges: one cyan tile and solid white glyphs. */
+.game-capabilities{gap:8px}@media(max-width:480px){.game-capabilities{gap:5px}}
+
+/* Keep display toggles immediately before sorting in reading order. */
+.collection-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:10px 24px}.section-heading:has(.collection-controls){align-items:center;flex-wrap:wrap}.collection-controls .sort-controls{margin-top:0}@media(max-width:650px){.collection-controls{justify-content:flex-start;margin-top:12px}}
+
+.bonus-layout-option[hidden]{display:none}
+
+/* The manual SVGs include their own matching cyan badges. */
+.capability .capability-icon{display:block;width:auto;height:30px;object-fit:contain}@media(max-width:480px){.capability .capability-icon{height:25px}}
+
+/* Put compatibility badges opposite the name, with metadata underneath. */
+.game-card{container-type:inline-size}
+.game-caption{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:start}
+.game-caption h3{grid-column:1;grid-row:1}
+.game-caption .game-maker{grid-column:1;grid-row:2}
+.game-caption .game-capabilities{grid-column:2;grid-row:1/3;justify-self:end;justify-content:flex-end;flex-wrap:nowrap;gap:4px;margin:0;min-height:0}
+.game-caption .capability-icon{height:20px}
+@container(max-width:290px){.game-caption{grid-template-columns:1fr}.game-caption .game-capabilities{grid-column:1;grid-row:3;margin-top:8px}}
+
+.game-caption .game-maker{font-weight:600}.game-download{grid-column:1/-1;font-size:12px;margin-top:8px;justify-self:start}
+@container(max-width:290px){.game-caption .game-download{grid-row:4}}
+
+/* Wrap larger feature sets within the right-hand caption column. */
+.game-caption .game-capabilities{width:max-content;max-width:124px;flex-wrap:wrap}
+
+.features-section{margin-top:40px}.features-section .capability-legend{margin-top:18px;padding-top:0;border-top:0}
+
+/* Balance each game's badges across at most two right-aligned rows. */
+.game-caption .game-capabilities{--badge-width:clamp(18px,6.8cqw,22px);--badge-gap:3px;width:calc(var(--feature-columns)*(var(--badge-width) + var(--badge-gap)) - var(--badge-gap));max-width:100%;gap:var(--badge-gap);justify-content:flex-end;align-content:start}
+.game-caption .game-capabilities .capability{flex:0 0 var(--badge-width)}
+.game-caption .game-capabilities .capability-icon{width:var(--badge-width);height:auto}
+
+.features-section .capability-legend{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px 24px}
+.features-section .capability{min-width:0;align-items:center}
+.features-section .capability-icon{flex-shrink:0}
+@media(max-width:900px){.features-section .capability-legend{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:400px){.features-section .capability-legend{grid-template-columns:1fr}}
+
+/* Align the compact legend with the About text column. */
+.site-shell{--about-text-left:248px;--about-inset:36px}
+.features-section{width:min(820px,calc(100% - var(--about-text-left)));margin-left:var(--about-text-left)}
+.features-section .capability-legend{margin-top:0}
+@media(max-width:800px){.site-shell{--about-text-left:36px}}
+@media(max-width:480px){.site-shell{--about-text-left:24px;--about-inset:24px}}
+
+.capability-label{white-space:pre-line;line-height:1.35}
+
+.game-caption .game-maker{font-size:11px;letter-spacing:1px}
+@media(max-width:480px){.game-caption .game-maker{font-size:10px}}
+
+.game-caption .game-maker{margin-top:3px}
+
+.game-links{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:8px;font-size:12px}
+@container(max-width:290px){.game-links{grid-row:4}}
+.menu-dock{padding-bottom:24px}
+
+.header-nav{display:flex;align-items:center;gap:20px}
+.install-section{width:min(740px,calc(100% - var(--about-text-left) - var(--about-inset)));margin:44px 0 0 var(--about-text-left);font-size:14px;color:var(--muted)}
+.install-section h2{margin-bottom:12px}.install-section p{margin:0 0 16px}.install-section ol{margin:0;padding-left:20px}.install-section li{padding-left:4px;margin:12px 0}.install-section strong{color:var(--ink);font-weight:600}.install-section code{font-size:.9em;overflow-wrap:anywhere}
+@media(max-width:480px){.header-nav{gap:14px}.install-section{font-size:13px}}
+
+.features-section h2{margin-bottom:18px}
+
+.copyright-notice p{max-width:740px;margin:0 auto;font-size:11px;line-height:1.6;text-wrap:pretty}
+
+.game-caption h3{text-transform:uppercase}
+
+.game-card[hidden]{display:none}.game-screen--tbc{cursor:default}.game-screen--tbc .gameplay-art{display:none}.game-screen--tbc .preview-label{opacity:1}
+.game-tech{display:none;grid-column:1/-1;margin:10px 0 0;padding:9px 0 0 16px;border-top:1px solid #d8dee3;font-size:12px;line-height:1.5;color:var(--muted);text-wrap:pretty}.show-tech .game-tech{display:block}.game-tech li{margin:3px 0}.game-tech li::marker{color:var(--cyan)}.game-tech code{font-size:.92em}
+@container(max-width:290px){.game-tech{grid-row:5}}
+
+.new-badge{display:none;position:absolute;top:8px;left:8px;padding:3px 9px;color:#fff;background:var(--cyan);border-radius:8px;z-index:2;font:700 11px/1.5 system-ui,sans-serif;letter-spacing:.6px;text-transform:uppercase;box-shadow:0 1px 3px #0003;pointer-events:none}.game-card[data-new] .new-badge{display:block}
+.game-download-button{display:block;margin-top:10px;padding:10px 16px;border-radius:999px;text-align:center;font-size:14px;font-weight:650;letter-spacing:.2px;text-decoration:none;color:#fff;background:linear-gradient(#3cc4f0,var(--cyan));box-shadow:0 2px 3px #00000014,0 6px 14px #13b6ea33,inset 0 1px 0 #ffffff66;transition:box-shadow .2s,transform .2s}.game-download-button:hover,.game-download-button:focus-visible{box-shadow:0 0 0 3px #30baec55,0 3px 8px #1ea0de40,0 10px 22px #00000012;transform:translateY(-2px);outline:none}.game-download-button:active{transform:scale(.97)}
+@media(max-width:480px){.game-download-button{padding:8px 12px;font-size:13px;margin-top:8px}}

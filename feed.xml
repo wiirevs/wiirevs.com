@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>WiiRevs</title>
+        <link>https://wiirevs.com/</link>
+        <description>Arcade classics, ported to Wii for the love of the game</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <language>en</language>
+        <pubDate>Fri, 23 Oct 2026 03:43:05 +0000</pubDate>
+        <lastBuildDate>Fri, 23 Oct 2026 03:43:05 +0000</lastBuildDate>
+        <item>
+            <title>Scud Race</title>
+            <link></link>
+            <description><![CDATA[<p>Scud Race (Sega, 1996) is now available for Wii.</p>]]></description>
+            <pubDate>Thu, 19 Nov 2026 12:00:00 +0000</pubDate>
+            <guid isPermaLink="false">cd246c9c-e934-4a37-9f9b-a562afe30a19</guid>
+        </item>
+    </channel>
+</rss>
