@@ -122,8 +122,15 @@ function applyVisibility() {
     .filter(card => !(card.dataset.release && card.dataset.release > asOf.value)).length} of ${released.dataset.total} games released`;
   [['main-game-grid', 'main-count'], ['bonus-game-grid', 'bonus-count']].forEach(([grid, count]) => {
     const total = document.querySelectorAll(`#${grid} > .game-card:not([hidden]):not([data-soon])`).length;
-    document.getElementById(count).textContent = `${total} games`;
-    if (grid === 'bonus-game-grid') document.getElementById('bonus-games').hidden = !document.querySelector(`#${grid} > .game-card:not([hidden])`);
+    const label = `${total} ${total === 1 ? 'game' : 'games'}`;
+    document.getElementById(count).textContent = label;
+    const jump = document.getElementById(count.replace('-count', '-jump-count'));
+    if (jump) jump.textContent = label;
+    if (grid === 'bonus-game-grid') {
+      const empty = !document.querySelector(`#${grid} > .game-card:not([hidden])`);
+      document.getElementById('bonus-games').hidden = empty;
+      document.getElementById('bonus-jump').hidden = empty;
+    }
   });
 }
 showTbc.addEventListener('change', () => { savePref('showTbc', showTbc.checked); applyVisibility(); });
